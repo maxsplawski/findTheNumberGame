@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Guess The Number!</h1>
+      <button class="btn again">Again!</button>
+      <button class="btn rules">The rules</button>
+      <p class="between">(Between 0 and 20)</p>
+      <div class="number">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="text" class="guess" />
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <div class="labels">
+          <p class="message">What is your guess?</p>
+          <p class="label-score">Score: <span class="score">0</span></p>
+          <p class="label-highscore">
+            Highscore: <span class="highscore">0</span>
+          </p>
+        </div>
+        <div class="hints">
+          <p>Hints:</p>
+          <div class="hints-container">
+            <li class="hint-1">1</li>
+            <li class="hint-2">2</li>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="difficulity-levels">
+      <button class="btn easy active">Easy</button>
+      <button class="btn hard">Hard</button>
+    </div>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <div class="modal-text">
+        <p>
+          1. You have to guess a number between 1 and 20. 2. Each wrong guess
+          lowers your score by 1, you've got 20 chances. 3. Easy mode gives you
+          two types of hints. Switch to hard mode for a bigger challange.
+        </p>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
